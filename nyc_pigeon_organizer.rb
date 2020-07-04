@@ -5,7 +5,7 @@ new_pigeon_hash = data.each_with_object({}) do |(key, value), new_pigeon_hash|
     binding.pry
     value.each do |inner_key, names|
       names.each do |name|
-        #binding.pry
+        binding.pry
         if !new_pigeon_hash[name]
           new_pigeon_hash[name] = {}
       end
